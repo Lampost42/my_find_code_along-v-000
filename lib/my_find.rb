@@ -5,8 +5,6 @@ def my_find(array)
   while i < array.length
     if yield(array[i])
       return array[i]
-    else
-      nil
     end
     i += 1
   end
