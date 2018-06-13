@@ -4,9 +4,9 @@ def my_find(array)
   i = 0 
   while i < array.length
     if yield(array[i])
-      return true
+      return array[i]
     else
-      false
+      nil
     end
     i += 1
   end
